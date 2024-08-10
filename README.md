@@ -1,36 +1,36 @@
-# Проект автоматизации обработки Excel файлов
+# Automating the processing of Excel files
 
-## Описание
-Этот проект создан для автоматизации рутинных задач обработки данных в Excel файлах с использованием Python. Он позволяет объединять данные из нескольких листов, сортировать их и сохранять в новый Excel файл.
+## Description
+This project is designed to automate routine data processing tasks in Excel files using Python. It allows you to combine data from multiple sheets, sort them, and save them to a new Excel file.
 
-## Структура проекта
-- `data/` - директория с примером исходных данных.
-- `scripts/` - директория со скриптами:
-  - `combine_sheets.py` - скрипт для объединения данных.
-  - `sort_data.py` - скрипт для сортировки данных.
-  - `save_to_excel.py` - скрипт для сохранения данных в Excel.
-  - `main.py` - основной скрипт для выполнения всех действий.
-- `requirements.txt` - файл с зависимостями.
-- `.gitignore` - файл для исключения ненужных файлов из коммитов.
-- `README.md` - файл с описанием проекта.
+## Project structure
+- `data/` - directory with sample source data.
+- `scripts/` - directory with scripts:
+  - `combine_sheets.py` - script for data merging.
+  - `sort_data.py` - script for sorting data.
+  - `save_to_excel.py` - script for saving data in Excel.
+  - `main.py` - the main script to perform all actions.
+- `requirements.txt` - file with dependencies.
+- `.gitignore` - file to exclude unnecessary files from commits.
+- `README.md` - file with project description.
 
-## Установка
-1. Склонируйте репозиторий:
+## Installation
+1. Clone the repository:
     ```bash
     git clone https://github.com/username/my_python_project.git
     cd my_python_project
     ```
-2. Создайте виртуальное окружение и активируйте его:
+2. Create a virtual environment and activate it:
     ```bash
     python3 -m venv venv
     source venv/bin/activate  # Для Windows: venv\Scripts\activate
     ```
-3. Установите зависимости:
+3. Install dependencies:
     ```bash
     pip install -r requirements.txt
     ```
 
-## Использование
-Запустите основной скрипт для обработки данных:
+## Usage
+Run the main script to process the data:
 ```bash
 python scripts/main.py
