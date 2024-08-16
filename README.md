@@ -1,18 +1,18 @@
-# Automating the processing of Excel files
+# Excel Files Processing Automation Project
 
 ## Description
-This project is designed to automate routine data processing tasks in Excel files using Python. It allows you to combine data from multiple sheets, sort them, and save them to a new Excel file.
+This project is designed to automate routine tasks of processing data in Excel files using Python. It allows you to merge data from multiple sheets, sort it, and save it to a new Excel file.
 
-## Project structure
-- `data/` - directory with sample source data.
-- `scripts/` - directory with scripts:
-  - `combine_sheets.py` - script for data merging.
-  - `sort_data.py` - script for sorting data.
-  - `save_to_excel.py` - script for saving data in Excel.
-  - `main.py` - the main script to perform all actions.
-- `requirements.txt` - file with dependencies.
-- `.gitignore` - file to exclude unnecessary files from commits.
-- `README.md` - file with project description.
+## Project Structure
+- `data/` - Directory containing sample input data.
+- `scripts/` - Directory containing scripts:
+  - `combine_sheets.py` - Script for merging data.
+  - `sort_data.py` - Script for sorting data.
+  - `save_to_excel.py` - Script for saving data to an Excel file.
+  - `main.py` - Main script that orchestrates all actions.
+- `requirements.txt` - File containing dependencies.
+- `.gitignore` - File to exclude unnecessary files from commits.
+- `README.md` - Project description file.
 
 ## Installation
 1. Clone the repository:
@@ -23,9 +23,9 @@ This project is designed to automate routine data processing tasks in Excel file
 2. Create a virtual environment and activate it:
     ```bash
     python3 -m venv venv
-    source venv/bin/activate  # Для Windows: venv\Scripts\activate
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
     ```
-3. Install dependencies:
+3. Install the dependencies:
     ```bash
     pip install -r requirements.txt
     ```
@@ -34,3 +34,37 @@ This project is designed to automate routine data processing tasks in Excel file
 Run the main script to process the data:
 ```bash
 python scripts/main.py
+```
+
+## License
+This project is licensed under the MIT License. For more information, see the LICENSE file.
+
+## Initializing Git and Uploading to GitHub
+
+### 1. Initialize the Git repository
+In the root folder of your project, run the following commands:
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+```
+
+### 2. Create a GitHub repository
+Go to GitHub and create a new repository.
+Follow the instructions on the screen to link your local repository to the remote:
+```bash
+git remote add origin https://github.com/username/my_python_project.git
+git branch -M main
+git push -u origin main
+```
+
+### 3. Adding a license file
+Don't forget to add a license file if you want to make the project open-source:
+```bash
+touch LICENSE
+```
+Then, add the license text, such as the MIT License, and commit the changes:
+```bash
+git add LICENSE
+git commit -m "Add LICENSE file"
+git push
